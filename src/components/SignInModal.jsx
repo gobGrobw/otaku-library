@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export function SignInModal({ onClick }) {
+export default function SignInModal({ onClick }) {
 	return (
 		<div className="fixed flex justify-center items-center top-0 left-0 h-full w-full bg-gray-700 bg-opacity-70 z-20">
 			<div className="relative w-1/4 h-1/4 p-5 flex flex-col gap-10 rounded-lg shadow-lg justify-center items-center bg-white text-center">

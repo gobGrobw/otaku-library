@@ -1,5 +1,5 @@
 'use client';
-import { VerticalDivider } from '@/components/Extras';
+import SignInModal, { VerticalDivider } from '@/components/SignInModal';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
