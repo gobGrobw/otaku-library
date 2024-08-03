@@ -1,5 +1,5 @@
 'use client';
-import { VerticalDivider } from '@/components/misc';
+import { VerticalDivider } from '@/components/Extras';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
