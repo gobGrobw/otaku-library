@@ -68,9 +68,6 @@ function NavSearchBar() {
 				onClick={() => {
 					setShowSearchBar(!showSearchBar);
 				}}
-				onBlur={() => {
-					setShowSearchBar(false);
-				}}
 			>
 				<FaMagnifyingGlass size={25} />
 			</button>
