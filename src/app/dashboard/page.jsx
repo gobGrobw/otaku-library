@@ -275,10 +275,10 @@ function MangaSection() {
 			<div className="flex flex-col items-center gap-2">
 				<div>
 					<h1 className="text-center text-shadow-light text-2xl font-semibold justify-around">
-						Anime stats
+						Manga stats
 					</h1>
 					<p className="text-center text-lg">
-						Total anime in your list: {list?.count || 0}
+						Total manga in your list: {list?.count || 0}
 					</p>
 				</div>
 				<hr className="mb-2 border-gray-600 w-4/5" />

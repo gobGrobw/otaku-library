@@ -11,7 +11,7 @@ export default function SearchHeader() {
 	async function fetchSearch(fetchManga = false) {
 		try {
 			const queryParams = new URLSearchParams({
-				limit: 7,
+				limit: 5,
 				q: searchTerm,
 				sfw: true,
 			});

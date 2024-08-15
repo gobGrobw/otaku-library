@@ -90,7 +90,7 @@ export default function AnimeDetails({ params }) {
 
 			{/* Anime image */}
 			<section className="flex gap-9">
-				<div className={`flex flex-col shrink-0 gap-5 ${placeholderImg}`}>
+				<div className={`flex flex-col shrink-0 phone:w-2/6 gap-5 ${placeholderImg}`}>
 					<img
 						className="shadow-lg rounded-lg"
 						src={anime?.images?.webp.large_image_url}
@@ -213,7 +213,7 @@ export default function AnimeDetails({ params }) {
 					<p className="text-lg">No trailer found for this anime</p>
 				) : (
 					<embed
-						width="1080"
+						width="100%"
 						height="600"
 						src={anime?.trailer?.embed_url}
 					/>

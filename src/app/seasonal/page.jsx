@@ -100,7 +100,7 @@ function Seasonal() {
 					</form>
 				</div>
 				<UlList
-					className={'grid grid-cols-8 justify-center gap-3 gap-y-10'}
+					className={'flex flex-wrap justify-center gap-10 gap-y-10'}
 					array={seasonalAnime}
 				/>
 			</section>

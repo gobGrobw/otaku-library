@@ -13,6 +13,9 @@ module.exports = {
 			textColor: {
 				'primary-font-color': 'var(--primary-font-color)',
 			},
+			screens: {
+				phone: { max: '1125px' },
+			},
 		},
 	},
 	plugins: [],

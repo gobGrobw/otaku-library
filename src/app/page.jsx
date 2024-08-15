@@ -8,12 +8,12 @@ export default function Home() {
 			<NavigationBar />
 			<header className="h-2/5 text-white img bg-cover bg-center bg-no-repeat mb-14 shrink-0">
 				<section className="h-full flex flex-col justify-center items-center">
-					<label className="text-6xl font-semibold mb-10 text-shadow">
+					<label className="text-6xl font-semibold mb-10 text-shadow text-center">
 						Otaku's Library
 					</label>
 
 					{/* Search form */}
-					<div className="w-3/6">
+					<div className="w-3/6 phone:w-full phone:pl-10 phone:pr-10">
 						<SearchBar />
 					</div>
 				</section>

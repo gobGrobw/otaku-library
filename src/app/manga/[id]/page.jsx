@@ -88,7 +88,9 @@ export default function MangaDetails({ params }) {
 
 			{/* Manga image */}
 			<section className="flex gap-9">
-				<div className={`flex flex-col shrink-0 gap-5 ${placeholderImg}`}>
+				<div
+					className={`flex flex-col shrink-0 phone:w-2/6 gap-5 ${placeholderImg}`}
+				>
 					<img
 						className="shadow-lg rounded-lg"
 						src={manga?.images?.webp.large_image_url}

@@ -67,10 +67,12 @@ export default function TopAnimeMangaSection() {
 					Seasonal anime series
 				</h1>
 
-				<UlList
-					className={'flex gap-3 gap-y-10'}
-					array={topArray.seasonal}
-				/>
+				<div className="overflow-auto phone:w-[95dvw] phone:my-3 phone:py-2">
+					<UlList
+						className={'flex gap-3 gap-y-10'}
+						array={topArray.seasonal}
+					/>
+				</div>
 				<ButtonLink href={'/seasonal'}>Browse seasonal anime</ButtonLink>
 			</section>
 
@@ -79,8 +81,12 @@ export default function TopAnimeMangaSection() {
 				<h1 className="text-3xl font-sans mb-6 font font-semibold">
 					Popular anime series
 				</h1>
-
-				<UlList className={'flex gap-3 gap-y-10'} array={topArray.anime} />
+				<div className="overflow-auto phone:w-[95dvw] phone:my-3 phone:py-2">
+					<UlList
+						className={'flex gap-3 gap-y-10'}
+						array={topArray.anime}
+					/>
+				</div>
 				<ButtonLink href={'/top/anime'}>Browse top anime</ButtonLink>
 			</section>
 
@@ -90,11 +96,13 @@ export default function TopAnimeMangaSection() {
 					Popular manga series
 				</h1>
 
-				<UlList
-					className={'flex gap-3 gap-y-10'}
-					array={topArray.manga}
-					isManga
-				/>
+				<div className="overflow-auto phone:w-[95dvw] phone:my-3 phone:py-2">
+					<UlList
+						className={'flex gap-3 gap-y-10'}
+						array={topArray.manga}
+						isManga
+					/>
+				</div>
 				<ButtonLink href={'/top/manga'}>Browse top manga</ButtonLink>
 			</section>
 		</main>
