@@ -11,6 +11,10 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<head>
 				<link rel="icon" href="/favicon.png" />
+				<meta
+					http-equiv="Content-Security-Policy"
+					content="upgrade-insecure-requests"
+				/>
 			</head>
 			<body className="flex flex-col">
 				<LayoutProvider>{children}</LayoutProvider>
