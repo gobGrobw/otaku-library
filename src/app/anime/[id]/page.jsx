@@ -182,18 +182,18 @@ export default function AnimeDetails({ params }) {
 			</section>
 
 			{/* Section for rating, rank, episodes, and studios */}
-			<section className="flex justify-around items-center">
-				<div className="flex flex-col items-center pt-2 pb-2">
+			<section className="flex justify-around items-center phone:text-center phone:text-sm">
+				<div className="flex flex-col items-center py-2">
 					Episodes: {anime?.episodes || anime?.status}
 					<span>Duration: {anime?.duration || 'Unknown'}</span>
 				</div>
 				<VerticalDivider />
-				<div className="flex flex-col items-center pt-2 pb-2">
+				<div className="flex flex-col items-center py-2">
 					Rating:
 					<span>{anime?.score}⭐ out of 10⭐</span>
 				</div>
 				<VerticalDivider />
-				<div className="pt-2 pb-2">
+				<div className="py-2">
 					<span>
 						{(anime?.studios &&
 							anime?.studios[0] &&
@@ -202,7 +202,7 @@ export default function AnimeDetails({ params }) {
 					</span>
 				</div>
 				<VerticalDivider />
-				<div className="pt-2 pb-2 transition-all hover:text-blue-500">
+				<div className="py-2 transition-all hover:text-blue-500">
 					<Link href={'/top/anime'}>Rank #{anime?.rank || 'Unknown'}</Link>
 				</div>
 			</section>

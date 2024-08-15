@@ -164,7 +164,7 @@ export default function MangaDetails({ params }) {
 			</section>
 
 			{/* Section for rating, rank, episodes, and creator */}
-			<section className="flex justify-around items-center">
+			<section className="flex justify-around items-center phone:text-center phone:text-sm">
 				<div className="flex flex-col items-center pt-2 pb-2">
 					Volumes: {manga?.volumes || manga?.status}
 					<span>Chapters: {manga?.chapters || 'Unknown'}</span>
