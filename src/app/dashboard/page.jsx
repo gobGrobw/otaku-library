@@ -54,7 +54,7 @@ function AnimeSection() {
 	const [placeholderImg, setPlaceholderImg] = useState('animated-background');
 
 	async function fetchAnimeList() {
-		const url = `http://otakulibrary.runasp.net/api/AnimeList/all`;
+		const url = `https://otaku-library-nodejs.vercel.app/api/AnimeList/all`;
 
 		try {
 			const response = await fetch(url, {
@@ -72,7 +72,7 @@ function AnimeSection() {
 	}
 
 	async function updateStatus(id, value) {
-		const url = 'http://otakulibrary.runasp.net/api/AnimeList/update';
+		const url = 'https://otaku-library-nodejs.vercel.app/api/AnimeList/update';
 
 		try {
 			const payload = list.payload.filter((x) => x.id === id)[0];
@@ -94,7 +94,7 @@ function AnimeSection() {
 	}
 
 	async function removeFromList(id) {
-		const url = `http://otakulibrary.runasp.net/api/AnimeList/delete/${id}`;
+		const url = `https://otaku-library-nodejs.vercel.app/api/AnimeList/delete/${id}`;
 
 		try {
 			await fetch(url, {
@@ -209,7 +209,7 @@ function MangaSection() {
 	const [placeholderImg, setPlaceholderImg] = useState('animated-background');
 
 	async function fetchMangaList() {
-		const url = `http://otakulibrary.runasp.net/api/MangaList/all`;
+		const url = `https://otaku-library-nodejs.vercel.app/api/MangaList/all`;
 
 		try {
 			const response = await fetch(url, {
@@ -227,7 +227,7 @@ function MangaSection() {
 	}
 
 	async function updateStatus(id, value) {
-		const url = 'http://otakulibrary.runasp.net/api/MangaList/update';
+		const url = 'https://otaku-library-nodejs.vercel.app/api/MangaList/update';
 
 		try {
 			const payload = list.payload.filter((x) => x.id === id)[0];
@@ -249,7 +249,7 @@ function MangaSection() {
 	}
 
 	async function removeFromList(id) {
-		const url = `http://otakulibrary.runasp.net/api/MangaList/delete/${id}`;
+		const url = `https://otaku-library-nodejs.vercel.app/api/MangaList/delete/${id}`;
 
 		try {
 			await fetch(url, {

@@ -7,8 +7,7 @@ export default function SignupPage() {
 	const router = useRouter();
 
 	async function postSignUp(data) {
-		// const url = 'http://otakulibrary.runasp.net/api/Auth/sign-up';
-		const url = 'http://otakulibrary.runasp.net/api/Auth/sign-up';
+		const url = 'https://otaku-library-nodejs.vercel.app/api/auth/sign-in';
 
 		try {
 			const response = await fetch(url, {

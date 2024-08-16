@@ -36,7 +36,7 @@ export default function AnimeDetails({ params }) {
 
 	async function addToList() {
 		if (localStorage.getItem('logged_in')) {
-			const url = 'http://otakulibrary.runasp.net/api/AnimeList/add';
+			const url = 'http://otaku-library-nodejs.vercel.app/api/AnimeList/add';
 			try {
 				await fetch(url, {
 					method: 'POST',
@@ -64,7 +64,7 @@ export default function AnimeDetails({ params }) {
 	}
 
 	async function checkIfAnimeInList(id) {
-		const url = `http://otakulibrary.runasp.net/api/AnimeList/${id}`;
+		const url = `http://otaku-library-nodejs.vercel.app/api/AnimeList/${id}`;
 
 		try {
 			const response = await fetch(url, {
@@ -90,7 +90,9 @@ export default function AnimeDetails({ params }) {
 
 			{/* Anime image */}
 			<section className="flex gap-9">
-				<div className={`flex flex-col shrink-0 phone:w-2/6 gap-5 ${placeholderImg}`}>
+				<div
+					className={`flex flex-col shrink-0 phone:w-2/6 gap-5 ${placeholderImg}`}
+				>
 					<img
 						className="shadow-lg rounded-lg"
 						src={anime?.images?.webp.large_image_url}

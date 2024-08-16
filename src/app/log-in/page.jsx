@@ -8,7 +8,7 @@ export default function LoginPage() {
 	const router = useRouter();
 
 	async function postLogin(data) {
-		const url = 'http://otakulibrary.runasp.net/api/Auth/log-in';
+		const url = 'https://otaku-library-nodejs.vercel.app/api/auth/log-in';
 
 		try {
 			const response = await fetch(url, {
@@ -19,7 +19,7 @@ export default function LoginPage() {
 
 			if (response.ok) {
 				const resJson = await response.json();
-				localStorage.setItem('token', resJson.jwt_token);
+				localStorage.setItem('token', resJson.token);
 				localStorage.setItem('logged_in', true);
 
 				return router.push('/');

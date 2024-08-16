@@ -34,7 +34,7 @@ export default function MangaDetails({ params }) {
 
 	async function addToList() {
 		if (localStorage.getItem('logged_in')) {
-			const url = 'http://otakulibrary.runasp.net/api/MangaList/add';
+			const url = 'https://otaku-library-nodejs.vercel.app/api/MangaList/add';
 			try {
 				await fetch(url, {
 					method: 'POST',
@@ -62,7 +62,7 @@ export default function MangaDetails({ params }) {
 	}
 
 	async function checkIfMangaInList(id) {
-		const url = `http://otakulibrary.runasp.net/api/MangaList/${id}`;
+		const url = `https://otaku-library-nodejs.vercel.app/api/MangaList/${id}`;
 
 		try {
 			const response = await fetch(url, {
