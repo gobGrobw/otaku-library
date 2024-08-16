@@ -36,7 +36,7 @@ export default function AnimeDetails({ params }) {
 
 	async function addToList() {
 		if (localStorage.getItem('logged_in')) {
-			const url = 'http://otaku-library-nodejs.vercel.app/api/AnimeList/add';
+			const url = 'https://otaku-library-nodejs.vercel.app/api/AnimeList/add';
 			try {
 				await fetch(url, {
 					method: 'POST',
@@ -64,7 +64,7 @@ export default function AnimeDetails({ params }) {
 	}
 
 	async function checkIfAnimeInList(id) {
-		const url = `http://otaku-library-nodejs.vercel.app/api/AnimeList/${id}`;
+		const url = `https://otaku-library-nodejs.vercel.app/api/AnimeList/${id}`;
 
 		try {
 			const response = await fetch(url, {
